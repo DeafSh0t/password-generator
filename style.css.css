@@ -1,0 +1,73 @@
+/* Apply a gradient background with a subtle animation */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+}
+
+/* Keyframes for gradient animation */
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Center content with some styling */
+.container {
+    text-align: center;
+    background: #3a7ab5 url('https://www.transparenttextures.com/patterns/cubes.png');
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.password-box {
+    margin: 20px 0;
+}
+
+#password {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#generateBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+#generateBtn:hover {
+    background-color: #0056b3;
+}
+
+.options {
+    text-align: left;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin: 5px 0;
+}
+
